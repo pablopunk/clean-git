@@ -1,6 +1,6 @@
 {
   "name": "clean-git",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Find all git repos that are not 'clean'",
   "main": "index.js",
   "scripts": {
