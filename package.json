@@ -23,5 +23,13 @@
   "devDependencies": {
     "ava": "^0.19.1",
     "standard": "^10.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pablopunk/clean-git.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pablopunk/clean-git/issues"
+  },
+  "homepage": "https://github.com/pablopunk/clean-git#readme"
 }
