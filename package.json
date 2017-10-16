@@ -1,7 +1,7 @@
 {
   "name": "clean-git",
   "description": "Find all git repos that are not 'clean'",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Pablo Varela <pablovarela182@gmail.com>",
   "bugs": {
     "url": "https://github.com/pablopunk/clean-git/issues",
