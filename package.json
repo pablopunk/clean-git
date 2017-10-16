@@ -1,35 +1,53 @@
 {
   "name": "clean-git",
-  "version": "2.0.1",
   "description": "Find all git repos that are not 'clean'",
-  "main": "index.js",
-  "scripts": {
-    "test": "standard && ava"
+  "version": "1.0.0",
+  "author": "Pablo Varela <pablovarela182@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/pablopunk/clean-git/issues",
+    "email": "pablovarela182@gmail.com"
   },
-  "keywords": [
-    "git",
-    "clean",
-    "status",
-    "repo",
-    "folder",
-    "node"
+  "contributors": [
+    "Pablo Varela <pablovarela182@gmail.com>"
   ],
-  "author": "Pablo Varela",
-  "license": "MIT",
   "dependencies": {
     "find-repos": "^1.1.0",
     "is-git-clean": "^1.1.0"
   },
   "devDependencies": {
-    "ava": "^0.19.1",
-    "standard": "^10.0.2"
+    "ava": "*",
+    "codecov": "*",
+    "nyc": "*",
+    "standard": "*"
+  },
+  "homepage": "https://github.com/pablopunk/clean-git",
+  "keywords": [
+    "miny",
+    "clean",
+    "git",
+    "status",
+    "repo",
+    "folder",
+    "node",
+    "module"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pablopunk/clean-git.git"
+    "url": "https://github.com/pablopunk/clean-git"
   },
-  "bugs": {
-    "url": "https://github.com/pablopunk/clean-git/issues"
-  },
-  "homepage": "https://github.com/pablopunk/clean-git#readme"
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "lint": "standard",
+    "test": "npm run lint && npm run test-coverage",
+    "test-coverage": "nyc ava"
+  }
 }
